@@ -1,105 +1,81 @@
-var box = document.getElementById("box");
+let card = document.getElementById(`card`)
 
-var noTextButton = document.getElementById("noText");
-var happyBirthdayButton = document.getElementById("happyBirthday");
-var congratsButton = document.getElementById("congrats");
-var getWellSoonButton = document.getElementById("getWellSoon");
+let birthdayButton = document.getElementById(`birthdayButton`)
+let congratsButton = document.getElementById(`congratsButton`)
+let getWellButton = document.getElementById(`getWellButton`)
 
-var noBackgroundButton = document.getElementById("noBackground");
-var mistyRoseButton = document.getElementById("mistyRose");
-var springGreenButton = document.getElementById("springGreen");
-var skyBlueButton = document.getElementById("skyBlue");
+let mistyButton = document.getElementById(`mistyButton`)
+let springButton = document.getElementById(`springButton`)
+let skyButton = document.getElementById(`skyButton`)
 
-var defaultColorButton = document.getElementById("defaultColor");
-var redButton = document.getElementById("red");
-var greenButton = document.getElementById("green");
-var blueButton = document.getElementById("blue");
+let redButton = document.getElementById(`redButton`)
+let greenButton = document.getElementById(`greenButton`)
+let blueButton = document.getElementById(`blueButton`)
 
-var defaultSizeButton = document.getElementById("defaultSize");
-var size40Button = document.getElementById("size40");
-var size60Button = document.getElementById("size60");
-var size80Button = document.getElementById("size80");
+let size40Button = document.getElementById(`size40Button`)
+let size60Button = document.getElementById(`size60Button`)
+let size80Button = document.getElementById(`size80Button`)
 
-noTextButton.addEventListener("click", showNoText);
-happyBirthdayButton.addEventListener("click", showHappyBirthday);
-congratsButton.addEventListener("click", showCongrats);
-getWellSoonButton.addEventListener("click", showGetWellSoon);
+birthdayButton.addEventListener(`click`, showBirthday)
+congratsButton.addEventListener(`click`, showCongrats)
+getWellButton.addEventListener(`click`, showGetWell)
 
-noBackgroundButton.addEventListener("click", setNoBackground);
-mistyRoseButton.addEventListener("click", setMistyRose);
-springGreenButton.addEventListener("click", setSpringGreen);
-skyBlueButton.addEventListener("click", setSkyBlue);
+mistyButton.addEventListener(`click`, changeMisty)
+springButton.addEventListener(`click`, changeSpring)
+skyButton.addEventListener(`click`, changeSky)
 
-defaultColorButton.addEventListener("click", setDefaultColor);
-redButton.addEventListener("click", setRed);
-greenButton.addEventListener("click", setGreen);
-blueButton.addEventListener("click", setBlue);
+redButton.addEventListener(`click`, changeRed)
+greenButton.addEventListener(`click`, changeGreen)
+blueButton.addEventListener(`click`, changeBlue)
 
-defaultSizeButton.addEventListener("click", setDefaultSize);
-size40Button.addEventListener("click", setSize40);
-size60Button.addEventListener("click", setSize60);
-size80Button.addEventListener("click", setSize80);
+size40Button.addEventListener(`click`, changeSize40)
+size60Button.addEventListener(`click`, changeSize60)
+size80Button.addEventListener(`click`, changeSize80)
 
-function showNoText() {
-    box.innerHTML = "";
-}
-
-function showHappyBirthday() {
-    box.innerHTML = "Happy Birthday";
+function showBirthday() {
+  card.innerHTML = `Happy Birthday`
 }
 
 function showCongrats() {
-    box.innerHTML = "Congrats";
+  card.innerHTML = `Congrats`
 }
 
-function showGetWellSoon() {
-    box.innerHTML = "Get Well Soon";
+function showGetWell() {
+  card.innerHTML = `Get Well Soon`
 }
 
-function setNoBackground() {
-    box.style.backgroundColor = "";
+function changeMisty() {
+  card.style.backgroundColor = `mistyrose`
 }
 
-function setMistyRose() {
-    box.style.backgroundColor = "mistyrose";
+function changeSpring() {
+  card.style.backgroundColor = `springgreen`
 }
 
-function setSpringGreen() {
-    box.style.backgroundColor = "springgreen";
+function changeSky() {
+  card.style.backgroundColor = `skyblue`
 }
 
-function setSkyBlue() {
-    box.style.backgroundColor = "skyblue";
+function changeRed() {
+  card.style.color = `red`
 }
 
-function setDefaultColor() {
-    box.style.color = "";
+function changeGreen() {
+  card.style.color = `green`
 }
 
-function setRed() {
-    box.style.color = "red";
+function changeBlue() {
+  card.style.color = `blue`
 }
 
-function setGreen() {
-    box.style.color = "green";
+function changeSize40() {
+  card.style.fontSize = `40px`
 }
 
-function setBlue() {
-    box.style.color = "blue";
+function changeSize60() {
+  card.style.fontSize = `60px`
 }
 
-function setDefaultSize() {
-    box.style.fontSize = "";
-}
-
-function setSize40() {
-    box.style.fontSize = "40px";
-}
-
-function setSize60() {
-    box.style.fontSize = "60px";
-}
-
-function setSize80() {
-    box.style.fontSize = "80px";
+function changeSize80() {
+  card.style.fontSize = `80px`
 }

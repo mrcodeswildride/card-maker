@@ -2,71 +2,40 @@
 <html>
 
 <head>
-    <title>Card Maker</title>
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
-    <link rel="stylesheet" href="stylesheet.css">
+	<title>Card Maker</title>
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<link href="style.css" rel="stylesheet">
+	<script src="script.js" defer>
+
+	</script>
 </head>
 
 <body>
-    <h1>Card Maker</h1>
+	<h1>Card Maker</h1>
 
-    <div id="box"></div>
+	<div id="card"></div>
 
-    <div id="controlPanel">
-        <div class="section">
-            <div>
-                <strong>Text:</strong>
-            </div>
+	<div id="sidePanel">
+		<p>Text</p>
+		<button id="birthdayButton">Happy Birthday</button>
+    <button id="congratsButton">Congrats</button>
+    <button id="getWellButton">Get Well Soon</button>
 
-            <div>
-                <button id="noText">None</button>
-                <button id="happyBirthday">Happy Birthday</button>
-                <button id="congrats">Congrats</button>
-                <button id="getWellSoon">Get Well Soon</button>
-            </div>
-        </div>
+    <p>Background color</p>
+    <button id="mistyButton">Misty Rose</button>
+    <button id="springButton">Spring Green</button>
+    <button id="skyButton">Sky Blue</button>
 
-        <div class="section">
-            <div>
-                <strong>Background color:</strong>
-            </div>
+    <p>Text color</p>
+    <button id="redButton">Red</button>
+    <button id="greenButton">Green</button>
+    <button id="blueButton">Blue</button>
 
-            <div>
-                <button id="noBackground">None</button>
-                <button id="mistyRose">Misty Rose</button>
-                <button id="springGreen">Spring Green</button>
-                <button id="skyBlue">Sky Blue</button>
-            </div>
-        </div>
-
-        <div class="section">
-            <div>
-                <strong>Text color:</strong>
-            </div>
-
-            <div>
-                <button id="defaultColor">Default</button>
-                <button id="red">Red</button>
-                <button id="green">Green</button>
-                <button id="blue">Blue</button>
-            </div>
-        </div>
-
-        <div class="section">
-            <div>
-                <strong>Text size:</strong>
-            </div>
-
-            <div>
-                <button id="defaultSize">Default</button>
-                <button id="size40">40 pixels</button>
-                <button id="size60">60 pixels</button>
-                <button id="size80">80 pixels</button>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+    <p>Font size</p>
+    <button id="size40Button">40 pixels</button>
+    <button id="size60Button">60 pixels</button>
+    <button id="size80Button">80 pixels</button>
+  </div>
 </body>
 
 </html>
