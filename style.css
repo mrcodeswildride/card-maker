@@ -20,7 +20,7 @@ body {
   overflow: hidden;
 }
 
-p {
+.label {
   font-weight: bold;
 }
 

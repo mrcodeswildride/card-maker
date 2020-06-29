@@ -15,6 +15,7 @@ let blueButton = document.getElementById(`blueButton`)
 let size40Button = document.getElementById(`size40Button`)
 let size60Button = document.getElementById(`size60Button`)
 let size80Button = document.getElementById(`size80Button`)
+let sizeParagraph = document.getElementById(`sizeParagraph`)
 
 birthdayButton.addEventListener(`click`, showBirthday)
 congratsButton.addEventListener(`click`, showCongrats)
@@ -70,12 +71,15 @@ function changeBlue() {
 
 function changeSize40() {
   card.style.fontSize = `40px`
+  sizeParagraph.innerHTML = `Selected font size: 40 pixels`
 }
 
 function changeSize60() {
   card.style.fontSize = `60px`
+  sizeParagraph.innerHTML = `Selected font size: 60 pixels`
 }
 
 function changeSize80() {
   card.style.fontSize = `80px`
+  sizeParagraph.innerHTML = `Selected font size: 80 pixels`
 }
