@@ -1,42 +1,38 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Card Maker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
 
-<head>
-	<title>Card Maker</title>
-	<meta name="viewport" content="width=device-width, initial-scale=0.5">
-	<link href="style.css" rel="stylesheet">
-	<script src="script.js" defer>
+  <body>
+    <h1>Card Maker</h1>
 
-	</script>
-</head>
+    <div id="card"></div>
 
-<body>
-	<h1>Card Maker</h1>
+    <div id="sidePanel">
+      <p class="label">Text</p>
+      <button id="birthdayButton">Happy Birthday</button>
+      <button id="congratsButton">Congrats</button>
+      <button id="getWellButton">Get Well Soon</button>
 
-	<div id="card"></div>
+      <p class="label">Background color</p>
+      <button id="mistyButton">Misty Rose</button>
+      <button id="springButton">Spring Green</button>
+      <button id="skyButton">Sky Blue</button>
 
-	<div id="sidePanel">
-		<p class="label">Text</p>
-		<button id="birthdayButton">Happy Birthday</button>
-    <button id="congratsButton">Congrats</button>
-    <button id="getWellButton">Get Well Soon</button>
+      <p class="label">Text color</p>
+      <button id="redButton">Red</button>
+      <button id="greenButton">Green</button>
+      <button id="blueButton">Blue</button>
 
-    <p class="label">Background color</p>
-    <button id="mistyButton">Misty Rose</button>
-    <button id="springButton">Spring Green</button>
-    <button id="skyButton">Sky Blue</button>
-
-    <p class="label">Text color</p>
-    <button id="redButton">Red</button>
-    <button id="greenButton">Green</button>
-    <button id="blueButton">Blue</button>
-
-    <p class="label">Font size</p>
-    <button id="size40Button">40 pixels</button>
-    <button id="size60Button">60 pixels</button>
-    <button id="size80Button">80 pixels</button>
-    <p id="sizeParagraph">Selected font size: none</p>
-  </div>
-</body>
-
+      <p class="label">Font size</p>
+      <button id="size40Button">40 pixels</button>
+      <button id="size60Button">60 pixels</button>
+      <button id="size80Button">80 pixels</button>
+      <p id="sizeParagraph">Selected font size: none</p>
+    </div>
+  </body>
 </html>
